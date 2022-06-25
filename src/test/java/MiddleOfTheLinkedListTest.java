@@ -18,6 +18,7 @@ class MiddleOfTheLinkedListTest {
 
         MiddleOfTheLinkedList middleOfTheLinkedList = new MiddleOfTheLinkedList();
         assertEquals(fourthNode, middleOfTheLinkedList.middleNode(head));
+        assertEquals(ListNodeUtils.middle(head), middleOfTheLinkedList.middleNode(head));
     }
 
     @Test
@@ -32,5 +33,6 @@ class MiddleOfTheLinkedListTest {
 
         MiddleOfTheLinkedList middleOfTheLinkedList = new MiddleOfTheLinkedList();
         assertEquals(thirdNode, middleOfTheLinkedList.middleNode(head));
+        assertEquals(ListNodeUtils.middle(head), middleOfTheLinkedList.middleNode(head));
     }
 }
