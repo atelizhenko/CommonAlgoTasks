@@ -1,7 +1,5 @@
 import util.ListNode;
 
-import java.util.Objects;
-
 import static util.ListNodeUtils.reverse;
 
 /**
@@ -12,21 +10,6 @@ import static util.ListNodeUtils.reverse;
  * 4. (Optional) Construct the original linked list by reversing the second half again and attaching it back to the first half
  */
 public class PalindromeLinkedList {
-
-    public static void main(String[] args) {
-        PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
-
-        ListNode listNode1 = new ListNode('a');
-        ListNode listNode2 = new ListNode('b', listNode1);
-        ListNode listNode3 = new ListNode('a', listNode2);
-        ListNode listNode4 = new ListNode('c', listNode3);
-        ListNode listNode5 = new ListNode('a', listNode4);
-        ListNode listNode6 = new ListNode('b', listNode5);
-        ListNode listNode7 = new ListNode('a', listNode6);
-
-        System.out.printf("Inout: %s%n", "['a', 'b', 'a', 'c', 'a', 'b', 'a']");
-        System.out.printf("Output: %s%n", palindromeLinkedList.isPalindrome(listNode7));
-    }
 
     public boolean isPalindrome(ListNode head) {
         if (head.next == null) {
@@ -71,7 +54,7 @@ public class PalindromeLinkedList {
     private boolean compareNodes(ListNode head, ListNode second) {
         ListNode temp1 = head;
         ListNode temp2 = second;
-        while (temp1 !=null && temp2 != null) {
+        while (temp1 != null && temp2 != null) {
             if (temp1.val == temp2.val) {
                 temp1 = temp1.next;
                 temp2 = temp2.next;
