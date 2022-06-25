@@ -1,4 +1,8 @@
+import util.ListNode;
+
 import java.util.Objects;
+
+import static util.ListNodeUtils.reverse;
 
 /**
  * Algorithm:
@@ -77,70 +81,6 @@ public class PalindromeLinkedList {
         }
 
         return temp1 == null && temp2 == null;
-    }
-
-    private ListNode reverse(ListNode head) {
-        //reverse second half
-        ListNode prev = null;
-        ListNode tempNext;
-        while (head != null) {
-            tempNext = head.next;
-            head.next = prev;
-            prev = head;
-            head = tempNext;
-        }
-        head = prev;
-
-        return head;
-    }
-
-    /**
-     * Definition for singly-linked list.
-     */
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(char val) {
-            this(val, null);
-        }
-
-        ListNode(int val) {
-            this(val, null);
-        }
-
-        ListNode (char val, ListNode next) {
-            this((int) val, next);
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            ListNode listNode = (ListNode) o;
-            return val == listNode.val && Objects.equals(next, listNode.next);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(val, next);
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
     }
 }
 

@@ -21,7 +21,6 @@ public class FizzBuzz {
              } else {
                  fizzBuzzList.add(String.valueOf(i));
              }
-
         }
 
         return fizzBuzzList;
