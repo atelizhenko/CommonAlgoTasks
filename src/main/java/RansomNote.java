@@ -2,14 +2,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RansomNote {
-    public static void main(String[] args) {
-        RansomNote ransomNote = new RansomNote();
-        String ransomNoteString = "aa";
-        String magazineString = "ab";
-        System.out.printf("Input: ransomNote = %s, magazine = %s%n", ransomNoteString, magazineString);
-        System.out.printf("Output: %s%n", ransomNote.canConstruct(ransomNoteString, magazineString));
-    }
-
     public boolean canConstruct(String ransomNote, String magazine) {
         if (ransomNote == null || ransomNote.isEmpty()) {
             return true;
