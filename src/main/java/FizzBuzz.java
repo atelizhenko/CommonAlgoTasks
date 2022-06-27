@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Task link: <a href="https://leetcode.com/problems/fizz-buzz/">here</a>
+ */
 public class FizzBuzz {
     public List<String> fizzBuzz(int n) {
         List<String> fizzBuzzList = new ArrayList<>(n);

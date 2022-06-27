@@ -9,6 +9,10 @@ import static util.ListNodeUtils.reverse;
  * 3. Check if the first half and second half are identical.
  * 4. (Optional) Construct the original linked list by reversing the second half again and attaching it back to the first half
  */
+
+/**
+ * Task link: <a href="https://leetcode.com/problems/palindrome-linked-list/">here</a>
+ */
 public class PalindromeLinkedList {
 
     public boolean isPalindrome(ListNode head) {

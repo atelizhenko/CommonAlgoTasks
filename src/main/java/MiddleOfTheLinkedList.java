@@ -6,6 +6,10 @@ import util.ListNode;
  * Move one pointer by one and the other pointers by two.
  * When the fast pointer reaches the end, the slow pointer will reach the middle of the linked list.
  */
+
+/**
+ * Task link: <a href="https://leetcode.com/problems/middle-of-the-linked-list/">here</a>
+ */
 public class MiddleOfTheLinkedList {
 
     public ListNode middleNode(ListNode head) {

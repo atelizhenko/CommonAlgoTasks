@@ -1,6 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Task link: <a href="https://leetcode.com/problems/ransom-note/">here</a>
+ */
 public class RansomNote {
     public boolean canConstruct(String ransomNote, String magazine) {
         if (ransomNote == null || ransomNote.isEmpty()) {

@@ -1,3 +1,6 @@
+/**
+ * Task link: <a href="https://leetcode.com/problems/richest-customer-wealth/">here</a>
+ */
 public class RichestCustomerWealth {
     public int maximumWealth(int[][] accounts) {
         int[][] indexToMax = new int[accounts.length][1];
