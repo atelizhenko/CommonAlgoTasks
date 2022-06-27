@@ -6,3 +6,4 @@ Solved in java lang most popular tasks, such as:
  3. Ransom Note
  4. Fizz Buzz
  5. Middle of the Linked List
+ 6. Number of Steps to Reduce a Number to Zero
