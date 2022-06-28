@@ -44,4 +44,14 @@ public class ListNodeUtils {
 
         return slowPointer;
     }
+
+    public static ListNode addToTheLast(ListNode head, ListNode node) {
+        ListNode temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = node;
+
+        return node;
+    }
 }
